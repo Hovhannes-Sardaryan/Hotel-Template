@@ -5,18 +5,35 @@ body{
 .main{
   margin: 0;
   padding: 0;
+  background-color: #f1f1f1;
   font-family: "Raleway", Arial, Helvetica, sans-serif;
 }
+a{
+  text-decoration: none;
+  color: black; 
+ }
+/* nav-bar  */
 .nav-bar{
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  grid-template-columns: repeat(11, 1fr) 115px;
   grid-template-rows: auto;
   list-style: none;
+  background-color: #fff;
+  height: 42px;
 }
-
 .nav-bar>.logo{
   grid-column: 1;
   grid-row: 1;
+  color: #fff !important;
+  background-color: #f44336;
+  width: 68px;
+}
+.nav-bar a{
+  padding: 10px 16px;
+  font-size: 18px;
+}
+.nav-bar>.logo>a{
+  color: #fff;
 }
 .nav-bar>.rooms{
   grid-column: 2;
@@ -30,12 +47,14 @@ body{
   grid-column: 4;
   grid-row: 1;
 }
-.nav-bar>.contact{
+.nav-bar>.book{
   grid-column: 12;
   grid-row: 1;
+  background-color: #f1f1f1;
+}
+.nav-hover:hover{
+  color: black;
+  background-color: #ccc;
 }
 
-.nav-bar>li>a{
- text-decoration: none;
- color: black; 
-}
+/* header */
