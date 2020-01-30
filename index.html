@@ -28,32 +28,34 @@
         <h2>Rooms</h2>
         <p>Make yourself at home is our slogan. We offer the best beds in the industry. Sleep well and rest well.</p>
       </div>
-      <form action="" method="get">
-        <label for="">
-          <p><i class="fas fa-calendar-check"></i>Check In</p>
-          <input type="date" name="Check_In" id="Check_In">
-        </label>  
-        <label for="">
-          <p><i class="fas fa-calendar-check"></i>Check Out</p>
-          <input type="date" name="Check_Out" id="Check_Out">
-        </label>
-        <label for="">
-          <p><i class="fas fa-male"></i>Adults</p>
-          <input type="number" name="Adults" id="Adults">
-        </label>
-        <label for="">
-          <p><i class="fas fa-child"></i>Kids</p>
-          <input type="number" name="Kids" id="Kids">
-        </label>
-        <label for="">
-          <p><i class="fas fa-search"></i>Search</p>
-          <button type="button" class="rooms-button" >Search</button>
-        </label>
-      </form>
+      <div class="form">
+        <form action="" method="get">
+          <label for="" class="in">
+            <p><i class="fas fa-calendar-check"></i>Check In</p>
+            <input type="date" name="check_in" id="check_in">
+          </label>  
+          <label for="" class="out">
+            <p><i class="fas fa-calendar-check"></i>Check Out</p>
+            <input type="date" name="check_out" id="check_out">
+          </label>
+          <label for="" class="rm-adlts">
+            <p><i class="fas fa-male"></i>Adults</p>
+            <input type="number" name="adults" id="adults">
+          </label>
+          <label for="" class="rm-kds">
+            <p><i class="fas fa-child"></i>Kids</p>
+            <input type="number" name="kids" id="kids">
+          </label>
+          <label for="" class="rm-btn">
+            <p><i class="fas fa-search"></i>Search</p>
+            <button type="button" class="rooms-button" >Search</button>
+          </label>
+        </form>
+      </div>
       <div class="single-room room">
         <img src="./images/room single.jpg" alt="single room">
         <div>
-          <h2>Single Room</h2>
+          <p class="room-heading-text">Single Room</p>
           <p class="price"> From $99</p>
           <p>King-size bed</p>
           <p>15m2</p>
@@ -68,7 +70,7 @@
       <div class="double-room room">
         <img src="./images/room double.jpg" alt="double room">
         <div>
-          <h2>Double Room</h2>
+          <p class="room-heading-text">Double Room</p>
           <p class="price">From $149</p>
           <p>Queen-size bed</p>
           <p>25m2</p>
@@ -84,7 +86,7 @@
       <div class="deluxe-room room">
         <img src="./images/room deluxe.jpg" alt="deluxe room">
         <div>
-          <h2>Deluxe Room</h2>
+          <p class="room-heading-text">Deluxe Room</p>
           <p class="price">From $199</p>
           <p>Single bed</p>
           <p>40m2</p>
