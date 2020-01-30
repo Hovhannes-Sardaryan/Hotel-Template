@@ -10,6 +10,7 @@
 </head>
 <body>
   <div class="main">
+    <!-- navigation pnel -->
     <div class="nav-bar">
       <a href="#" class="logo nav-hover nav-li"> <i class="fas fa-bed"></i> Logo</a>
       <a href="#rooms" class="rooms nav-hover nav-li">Rooms</a>
@@ -17,8 +18,87 @@
       <a href="#contact" class="contact nav-hover nav-li">Contact</a>
       <a href="#bookNow" class="book nav-hover nav-li">Book Now</a>
     </div>
+    <!-- header -->
     <div class="header">
 
+    </div>
+    <!-- rooms -->
+    <div id="rooms">
+      <div class="room-head">
+        <h2>Rooms</h2>
+        <p>Make yourself at home is our slogan. We offer the best beds in the industry. Sleep well and rest well.</p>
+      </div>
+      <form action="" method="get">
+        <label for="">
+          <p><i class="fas fa-calendar-check"></i>Check In</p>
+          <input type="date" name="Check_In" id="Check_In">
+        </label>  
+        <label for="">
+          <p><i class="fas fa-calendar-check"></i>Check Out</p>
+          <input type="date" name="Check_Out" id="Check_Out">
+        </label>
+        <label for="">
+          <p><i class="fas fa-male"></i>Adults</p>
+          <input type="number" name="Adults" id="Adults">
+        </label>
+        <label for="">
+          <p><i class="fas fa-child"></i>Kids</p>
+          <input type="number" name="Kids" id="Kids">
+        </label>
+        <label for="">
+          <p><i class="fas fa-search"></i>Search</p>
+          <button type="button" class="rooms-button" >Search</button>
+        </label>
+      </form>
+      <div class="single-room room">
+        <img src="./images/room single.jpg" alt="single room">
+        <div>
+          <h2>Single Room</h2>
+          <p class="price"> From $99</p>
+          <p>King-size bed</p>
+          <p>15m2</p>
+          <p class="icons">
+            <i class="fas fa-bath"></i>
+            <i class="fas fa-phone-alt"></i>
+            <i class="fas fa-wifi"></i>
+          </p>
+          <button class="rooms-button">Choose Room</button>
+        </div>
+      </div>
+      <div class="double-room room">
+        <img src="./images/room double.jpg" alt="double room">
+        <div>
+          <h2>Double Room</h2>
+          <p class="price">From $149</p>
+          <p>Queen-size bed</p>
+          <p>25m2</p>
+          <p class="icons">
+            <i class="fas fa-bath"></i>
+            <i class="fas fa-phone-alt"></i>
+            <i class="fas fa-wifi"></i>
+            <i class="fas fa-tv"></i>
+          </p>
+          <button class="rooms-button">Choose Room</button>
+        </div>
+      </div>
+      <div class="deluxe-room room">
+        <img src="./images/room deluxe.jpg" alt="deluxe room">
+        <div>
+          <h2>Deluxe Room</h2>
+          <p class="price">From $199</p>
+          <p>Single bed</p>
+          <p>40m2</p>
+          <p class="icons">
+            <i class="fas fa-bath"></i>
+            <i class="fas fa-phone-alt"></i>
+            <i class="fas fa-wifi"></i>
+            <i class="fas fa-tv"></i>
+            <i class="fas fa-glass-martini"></i>
+            <i class="fas fa-utensils"></i>
+          </p>
+          <button class="rooms-button">Choose Room</button>
+        </div>
+      </div>
     </div>
   </div>
 </body>
