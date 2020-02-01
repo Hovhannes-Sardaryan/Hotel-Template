@@ -1,19 +1,18 @@
-body{
+body {
   margin: 0;
   padding: 0;
 }
-.main{
+body .main {
   margin: 0;
   padding: 0;
   background-color: #f1f1f1;
   font-family: "Raleway", Arial, Helvetica, sans-serif;
 }
-a{
+body .main a {
   text-decoration: none;
-  color: black; 
- }
-/* nav-bar  */
-.nav-bar{
+  color: black;
+}
+body .main .nav-bar {
   display: grid;
   grid-template-columns: repeat(12, 1fr) 115px;
   grid-template-rows: auto;
@@ -21,47 +20,40 @@ a{
   background-color: #fff;
   height: 42px;
 }
-.nav-bar>.logo{
+body .main .nav-bar > .logo {
   grid-column: 1;
   grid-row: 1;
   color: #fff !important;
   background-color: #f44336;
   min-width: 68px;
 }
-.nav-bar a{
+body .main .nav-bar > a {
   padding: 10px 16px;
   font-size: 18px;
 }
-.nav-bar>.logo>a{
-  color: #fff;
+body .main .nav-bar > a:hover {
+  color: black !important;
+  background-color: #ccc;
+  transition-duration: 0.3s;
 }
-.nav-bar>.rooms{
+body .main .nav-bar > .rooms {
   grid-column: 2;
   grid-row: 1;
 }
-.nav-bar>.about{
+body .main .nav-bar > .about {
   grid-column: 3;
   grid-row: 1;
 }
-.nav-bar>.contact{
+body .main .nav-bar > .contact {
   grid-column: 4;
   grid-row: 1;
 }
-.nav-bar>.book{
+body .main .nav-bar > .book {
   grid-column: 13;
   grid-row: 1;
   background-color: #f1f1f1;
 }
-.nav-hover:hover{
-  color: black;
-  background-color: #ccc;
-  transition-duration: 0.3s;
-}
-
-/* header */
-
-/* rooms */
-#rooms{
+body .main #rooms {
   margin: 0;
   padding: 16px;
   max-width: 100%;
@@ -70,83 +62,103 @@ a{
   grid-template-rows: auto;
   grid-gap: 16px;
 }
-.room-head{
+body .main #rooms .room-head {
   grid-column: 1/4;
   grid-row: 1;
 }
-#rooms>.form{
-  grid-column: 1/4;
-  grid-row: 2;
+body .main #rooms .form {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
 }
-#rooms>.form form{
+body .main #rooms .form form {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
-  grid-gap: 16px;
+  grid-column-gap: 16px;
 }
-
-#rooms>.form form label p{
+body .main #rooms .form form div {
+  margin: 0;
+  padding: 5px 0;
+  border: 1px solid green;
+  position: relative;
+}
+body .main #rooms .form form div p {
   margin: 0;
   padding: 0;
 }
-#rooms>.form form label{
-  /* width: 100%; */
-  border: 1px solid green
-}
-#rooms>.form form input{
-  padding: 10px 18px;
-  /* width: 100%; */
-  height: 20px;
-}
-#rooms>.form form .in{
-  grid-column: 1/3;
-  grid-row: 1;
-}
-#rooms>.form form .out{
-  grid-column: 3/5;
-  grid-row: 1;
-}
-#rooms>.form form .rm-adlts{
-  grid-column: 5;
-  grid-row: 1;
-}
-#rooms>.form form .rm-kds{
-  grid-column: 6;
-  grid-row: 1;
-}
-#rooms>.form form .rm-btn{
-  grid-column: 7;
-  grid-row: 1;
-  /* width: 100%; */
-}
-
-.single-room{
-  grid-column: 1;
-  grid-row: 3;
-}
-.double-room{
-  grid-column: 2;
-  grid-row: 3;
-}
-.deluxe-room{
-  grid-column: 3;
-  grid-row: 3;
-}
-.room{
-  background-color: #fff;
-}
-.room img{
+body .main #rooms .form form div input, body .main #rooms .form form div button {
+  padding: 13px 18px;
   width: 100%;
 }
-.room>div{
+body .main #rooms .form form .form-1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+body .main #rooms .form form .form-2 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+body .main #rooms .form form .form-3 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+body .main #rooms .form form .form-4 {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+body .main #rooms .form form .form-5 {
+  grid-column-start: 5;
+  grid-column-end: 6;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  /* width: 100%; */
+}
+body .main #rooms .single-room {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+body .main #rooms .double-room {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+body .main #rooms .deluxe-room {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+body .main #rooms .room {
+  background-color: #fff;
+}
+body .main #rooms .room img {
+  width: 100%;
+}
+body .main #rooms .room > div {
   width: inherit;
   padding: 16px;
   margin-top: -15px;
 }
-.room-heading-text{
+body .main #rooms .room > div .price {
+  color: #ccc;
+}
+body .main #rooms .room > div .room-heading-text {
   font-size: 25px;
 }
-.rooms-button{
+body .main #rooms .room > div .rooms-button {
   width: 100%;
   height: 44px;
   color: #fff;
@@ -154,11 +166,10 @@ a{
   border: none;
   font-size: 18px;
 }
-.rooms-button:hover{
+body .main #rooms .room > div .rooms-button:hover {
   color: #000;
   background-color: #ccc !important;
   transition-duration: 0.3s;
 }
-.price{
-  color: #ccc;
-}
+
+/*# sourceMappingURL=style.css.map */

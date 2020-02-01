@@ -7,6 +7,7 @@
   <title>Hotel Template</title>
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./fontAwesome/css/all.min.css">
+  <link rel="stylesheet" href="./style/sass.scss">
 </head>
 <body>
   <div class="main">
@@ -30,26 +31,36 @@
       </div>
       <div class="form">
         <form action="" method="get">
-          <label for="" class="in">
-            <p><i class="fas fa-calendar-check"></i>Check In</p>
-            <input type="date" name="check_in" id="check_in">
-          </label>  
-          <label for="" class="out">
-            <p><i class="fas fa-calendar-check"></i>Check Out</p>
-            <input type="date" name="check_out" id="check_out">
-          </label>
-          <label for="" class="rm-adlts">
-            <p><i class="fas fa-male"></i>Adults</p>
-            <input type="number" name="adults" id="adults">
-          </label>
-          <label for="" class="rm-kds">
-            <p><i class="fas fa-child"></i>Kids</p>
-            <input type="number" name="kids" id="kids">
-          </label>
-          <label for="" class="rm-btn">
-            <p><i class="fas fa-search"></i>Search</p>
-            <button type="button" class="rooms-button" >Search</button>
-          </label>
+          <div class="form-1">
+            <!-- <label for=""> -->
+              <p><i class="fas fa-calendar-alt"></i>Check In</p>
+            <input type="date" name="check_in" id="check_in" placeholder="DD MM YYYY">  
+            <!-- </label> -->
+          </div>
+          <div class="form-2">
+            <!-- <label for=""> -->
+              <p><i class="fas fa-calendar-alt"></i>Check Out</p>
+              <input type="date" name="check_out" id="check_out" placeholder="DD MM YYYY">
+            <!-- </label> -->
+          </div>
+          <div class="form-3">
+            <!-- <label for=""> -->
+              <p><i class="fas fa-male"></i>Adults</p>
+              <input type="number" name="adults" id="adults">
+            <!-- </label> -->
+          </div>
+          <div class="form-4">
+            <!-- <label for=""> -->
+              <p><i class="fas fa-child"></i>Kids</p>
+              <input type="number" name="kids" id="kids">
+            <!-- </label> -->
+          </div>
+          <div class="form-5">
+            <!-- <label for=""> -->
+              <p><i class="fas fa-search"></i>Search</p>
+              <button type="button" class="rooms-button" >Search</button>
+            <!-- </label> -->
+          </div>
         </form>
       </div>
       <div class="single-room room">
